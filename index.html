@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+</head>
+<body>
+<div id="page1">
+        <div class="box">
+            <img class="boxall zoomIn animated" src="images/box-all.png"/>
+            <img class="version bounceInLeft animated" src="images/version.png"/>
+            <img class="line" src="images/line.png"/>
+        </div>
+        <div class="bottom">
+            <div class="box1">
+                <h1 class="zoomOut animated">重磅来袭</h1>
+
+                <p class="slideInDown animated delay">说好的全新视觉震撼体验</p>
+            </div>
+        </div>
+</div>
+<div id="page2">
+    <div class="page2box">
+        <img class="icon zoomIn animated" src="images/page2icon.png"/>
+        <img class="mobile fadeInUp animated delay" src="images/page2mobile.png"/>
+        <img class="card1 slideInLeft animated" src="images/card1.png"/>
+        <img class="card2 slideInRight animated" src="images/card2.png"/>
+        <img class="card3 rotateInDownLeft animated" src="images/card3.png"/>
+        <img class="card4 rotateInDownLeft animated" src="images/card4.png"/>
+    </div>
+    <div class="bottom">
+        <div class="box1">
+            <a class="btn" href="javascript:void(0)">马上体验</a>
+        </div>
+    </div>
+</div>
+<ul class="pagination">
+    <li class="live"></li>
+    <li></li>
+</ul>
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/z-touch.js"></script>
+<script type="text/javascript">
+    var pageLi=$('.pagination li');
+    $('body').on('swipeLeft',function(){
+       $('#page1').hide();
+        $('#page2').show();
+        pageLi.eq(1).addClass('live').siblings().removeClass('live');
+    }).on('swipeRight',function(){
+        $('#page2').hide();
+        $('#page1').show();
+        pageLi.eq(0).addClass('live').siblings().removeClass('live');
+    });
+</script>
+</body>
+</html>
