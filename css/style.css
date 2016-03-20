@@ -243,7 +243,7 @@ a{-webkit-tap-highlight-color: transparent;}
 .card2{left:16%;tanimation-delay: 1s;top:40%;animation-delay: 1.3s;}
 .card3{left:6%;top:18%;animation-delay: 1.6s;}
 .card4{left:-21%;top:-15%;animation-delay: 2s;}
-.pagination{width:100%; text-align: center;position: fixed;bottom:3%;margin:0;padding:0;}
+.pagination{width:100%; text-align: center;position: fixed;bottom:1%;margin:0;padding:0;}
 .pagination li{width:4px;height: 4px;border:2px solid #fee7d6;display: inline-block; margin-left: 8px;border-radius: 100%;}
 .pagination li:first-child{margin-left: 0;}
 .pagination li.live{border:2px solid #fb8630;}
